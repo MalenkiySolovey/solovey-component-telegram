@@ -1,6 +1,7 @@
 //go:build !minimal
 
-package jobs
+// Package schedule owns Telegram component schedule parsing rules.
+package schedule
 
 import (
 	"strings"
@@ -10,14 +11,14 @@ import (
 	"github.com/robfig/cron/v3"
 )
 
-var telegramCronParser = cron.NewParser(cron.Minute | cron.Hour | cron.Dom | cron.Month | cron.Dow)
+var parser = cron.NewParser(cron.Minute | cron.Hour | cron.Dom | cron.Month | cron.Dow)
 
-func parseTelegramCron(spec string) (cron.Schedule, error) {
+func Parse(spec string) (cron.Schedule, error) {
 	spec = strings.TrimSpace(spec)
 	if spec == "" {
 		return nil, nil
 	}
-	schedule, err := telegramCronParser.Parse(spec)
+	schedule, err := parser.Parse(spec)
 	if err != nil {
 		return nil, err
 	}
