@@ -7,6 +7,11 @@ import {fileURLToPath} from 'node:url'
 
 const root=fileURLToPath(new URL('../',import.meta.url))
 assert.equal(process.env.GOWORK,'off','qualification requires GOWORK=off')
+assert.ok((process.env.GOFLAGS??'').split(/\s+/).every(flag=>!flag||flag==='-mod=readonly'),'source qualification rejects Go flag substitution')
+const mod=JSON.parse(execFileSync('go',['mod','edit','-json'],{cwd:root,encoding:'utf8'}))
+assert.equal(mod.Module.Path,'github.com/MalenkiySolovey/solovey-component-telegram')
+assert.ok(!(mod.Replace??[]).length,'source module replacements are forbidden')
+assert.deepEqual(Object.fromEntries((mod.Require??[]).map(item=>[item.Path,item.Version])),{'github.com/MalenkiySolovey/solovey-host':'v0.2.0','github.com/robfig/cron/v3':'v3.0.1'},'unreviewed source module requirements')
 const source=JSON.parse(fs.readFileSync(path.join(root,'SOURCE_PROVENANCE.json')))
 assert.equal(source.component,'telegram')
 assert.equal(source.originalCommit,'95f4673dd349fd3ee4220fb32ac675469d685a0b')
@@ -20,7 +25,7 @@ const output=execFileSync('go',['list','-deps','-test','-json','./...'],{cwd:roo
 const packages=(output.match(/^{[\s\S]*?^}/gm)??[]).map(JSON.parse)
 assert.ok(packages.length>0)
 const allowed=new Set(['github.com/MalenkiySolovey/solovey-component-telegram','github.com/MalenkiySolovey/solovey-host','github.com/robfig/cron/v3'])
-for(const pkg of packages)if(pkg.Module)assert.ok(allowed.has(pkg.Module.Path),`unapproved source dependency ${pkg.ImportPath}`)
+for(const pkg of packages)if(pkg.Module){assert.ok(allowed.has(pkg.Module.Path),`unapproved source dependency ${pkg.ImportPath}`);assert.ok(!pkg.Module.Replace,'source module substitution')}
 const walk=directory=>fs.readdirSync(directory,{withFileTypes:true}).flatMap(entry=>entry.name==='node_modules'||entry.name.startsWith('.')?[]:entry.isDirectory()?walk(path.join(directory,entry.name)):[path.join(directory,entry.name)])
 for(const filename of walk(root).filter(name=>/\.(go|ts|vue)$/.test(name))) {
  const text=fs.readFileSync(filename,'utf8')
