@@ -1,0 +1,6 @@
+Solovey administrative Telegram Component
+
+Derived from MalenkiySolovey/solovey-ui components/telegram at commit 95f4673dd349fd3ee4220fb32ac675469d685a0b.
+Original source authors and Git history are preserved in the filtered source history and SOURCE_PROVENANCE.json.
+This extraction preserves the original GPL-3.0 license; it does not relicense upstream work.
+Shared Host code remains independently sourced from github.com/MalenkiySolovey/solovey-host.
