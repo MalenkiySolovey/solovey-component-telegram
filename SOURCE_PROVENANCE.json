@@ -1,0 +1,562 @@
+{
+  "schema": "solovey.component.source-provenance/v1",
+  "component": "telegram",
+  "originalRepository": "https://github.com/MalenkiySolovey/solovey-ui",
+  "originalCommit": "95f4673dd349fd3ee4220fb32ac675469d685a0b",
+  "originalComponentTree": "a41956926d286263daaf61d27b2d70d65f3b4d8d",
+  "filteredHistoryCommit": "2e76cc8c2877646ab763c8fb428b18d6033a8b97",
+  "historyPolicy": "Isolated git subtree split of components/telegram. Its complete 14-commit history is merged as source ancestry, preserving original authors, alongside per-file original blobs/history. No active product history was rewritten.",
+  "originalLicense": "GPL-3.0-only",
+  "licenseSHA256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+  "files": [
+    {
+      "source": "components/telegram/component.json",
+      "destination": "component.json",
+      "originalBlob": "f21dfad8c582bf4d797cd5b2dcb2052ffeba3931",
+      "originalSHA256": "73f138cd8563d4f858592a2ca7f309a43b026623f852ccf23436229c1bcc312f",
+      "destinationSHA256": "73f138cd8563d4f858592a2ca7f309a43b026623f852ccf23436229c1bcc312f",
+      "adaptation": "Unchanged canonical manifest bytes and semantics",
+      "history": [
+        "4c424b0e6307117008236aba3a35ba4824800008\t2026-10-21T03:07:25+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat(componenthost): bind declared owner ports for Telegram",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0\t2026-08-12T00:37:51+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: ship Solovey UI 2026.3.0",
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release"
+      ]
+    },
+    {
+      "source": "components/telegram/component.go",
+      "destination": "manifest.go",
+      "originalBlob": "4c719c3c434d093e1575512b4b4d09dbdd7bbb24",
+      "originalSHA256": "8ef0b0e84b90ba7d534213c391b2703818edbe7cbe4181e74bfe4dc670d93cd3",
+      "destinationSHA256": "6a94c41b6d47c78363b22ce0db0ede76ecaa6ab41e4c1de52f144348f76b2a79",
+      "adaptation": "Only manifest declaration uses the accepted shared parser; no init registration",
+      "history": [
+        "212a69dfdaf60faa3f8626eac878638daf40bb6a\t2026-11-09T18:25:28+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tAdopt shared component contracts and preserve Panel owner adapters",
+        "4c424b0e6307117008236aba3a35ba4824800008\t2026-10-21T03:07:25+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat(componenthost): bind declared owner ports for Telegram",
+        "2b30456e427ec5b3034ddec79a8b82046b0f04a9\t2026-10-17T17:41:05+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\trefactor(componenthost): inject Telegram transport and audit ports",
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13\t2026-08-15T02:57:14+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\trefactor: finalize architecture and release hardening",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0\t2026-08-12T00:37:51+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: ship Solovey UI 2026.3.0",
+        "5be0d168f69f6b32a0ca581a5ef5223d7d986be0\t2026-07-03T01:37:11+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tFinalize Solovey UI 2026.2.0 release",
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release"
+      ]
+    },
+    {
+      "source": "components/telegram/service/service.go",
+      "destination": "service/service.go",
+      "originalBlob": "a08c10f916a911561d4ccedc2118e79b5dcf1809",
+      "originalSHA256": "ef7b148858e9bc72ad0468e0bbafcc7cca6b06168eb987065374d95365b795df",
+      "destinationSHA256": "747ae0ce1bb7526ed0757934f8342a12c5c347aed5725d7bae51eb0bcd02cf4e",
+      "adaptation": "Narrow existing Host operation lease and approved-client injection; shared audit/result values",
+      "history": [
+        "2d26a1c1712cdcd118df932de04dcfc7a32035be\t2026-10-18T17:21:17+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tAdapt Telegram credentials to scoped SecretRef access",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0\t2026-08-12T00:37:51+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: ship Solovey UI 2026.3.0",
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release",
+        "328992697756e0520fa4a048a660e69df4374a89\t2026-06-26T03:17:29+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tRelease Solovey UI 2026.1.0"
+      ]
+    },
+    {
+      "source": "components/telegram/service/settings.go",
+      "destination": "service/settings.go",
+      "originalBlob": "b048bd95e45e84e24b01da348f4ec9d423f33919",
+      "originalSHA256": "9419fb037e39d1a938de423a393a3f50eb4538fcdb55b4bf736035ab56d20961",
+      "destinationSHA256": "c99e7518969c451d0d93ec6d50712e8f7ea88c5bc9b7179268e27e6687f0ba67",
+      "adaptation": "Credential policy retained; proxy selection remains Panel",
+      "history": [
+        "2d26a1c1712cdcd118df932de04dcfc7a32035be\t2026-10-18T17:21:17+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tAdapt Telegram credentials to scoped SecretRef access",
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13\t2026-08-15T02:57:14+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\trefactor: finalize architecture and release hardening",
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release",
+        "328992697756e0520fa4a048a660e69df4374a89\t2026-06-26T03:17:29+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tRelease Solovey UI 2026.1.0"
+      ]
+    },
+    {
+      "source": "components/telegram/service/botapi.go",
+      "destination": "service/botapi.go",
+      "originalBlob": "9dc4431e5088567332ffed2429234897037ccc66",
+      "originalSHA256": "eb9f5be2c26272a3c9cf64b6ff3e1b83f798881ac3b2690b0b3a6eec0195150d",
+      "destinationSHA256": "f6d44d5c0dd4da6b7f41114871ea3d0d6a63b91c1dad474eed4074a71221ff36",
+      "adaptation": "Original delivery/discovery with injected existing operation admission and shared transport; reject malformed and application-error HTTP-success responses through the existing shared parser",
+      "history": [
+        "2d26a1c1712cdcd118df932de04dcfc7a32035be\t2026-10-18T17:21:17+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tAdapt Telegram credentials to scoped SecretRef access",
+        "7ade7787b53b29129ab8c85a82c040b71cb9be30\t2026-10-04T23:36:43+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfix(restore): drain SQLite generations through acceptance and recovery",
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13\t2026-08-15T02:57:14+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\trefactor: finalize architecture and release hardening",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0\t2026-08-12T00:37:51+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: ship Solovey UI 2026.3.0",
+        "5be0d168f69f6b32a0ca581a5ef5223d7d986be0\t2026-07-03T01:37:11+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tFinalize Solovey UI 2026.2.0 release",
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release",
+        "328992697756e0520fa4a048a660e69df4374a89\t2026-06-26T03:17:29+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tRelease Solovey UI 2026.1.0"
+      ]
+    },
+    {
+      "source": "components/telegram/service/discovery.go",
+      "destination": "service/discovery.go",
+      "originalBlob": "1ed54fa9c33a061887e9ba78725f0642778bc4f4",
+      "originalSHA256": "911be5c8f7008b2f98a321aae78bee7a4a41f1edfa720f43252caf330f19caae",
+      "destinationSHA256": "66dc08d42d9323480281ea3632eb107998061c151bcf2c402086fbee4540ffcd",
+      "adaptation": "Original delivery/discovery with injected existing operation admission and shared transport",
+      "history": [
+        "2d26a1c1712cdcd118df932de04dcfc7a32035be\t2026-10-18T17:21:17+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tAdapt Telegram credentials to scoped SecretRef access",
+        "2294ee6af064e9c4ef155d9fd0f4aeee09f93721\t2026-10-06T05:17:57+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: bound Telegram discovery and serialize settings tests"
+      ]
+    },
+    {
+      "source": "components/telegram/service/notification.go",
+      "destination": "service/notification.go",
+      "originalBlob": "5967e79d9bc1377d38ccaabd66a1de9f01c5d8a3",
+      "originalSHA256": "ee2f421131086e668fd81b81b8631b68f7eb75adc512736f6b5fe70a40fa57b6",
+      "destinationSHA256": "ac7c9f8dab73d81bcadfe0eb8df5b04e8449a72c0d40e37dccbeb05ee14d1e9e",
+      "adaptation": "Shared redaction import only",
+      "history": [
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13\t2026-08-15T02:57:14+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\trefactor: finalize architecture and release hardening",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0\t2026-08-12T00:37:51+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: ship Solovey UI 2026.3.0",
+        "5be0d168f69f6b32a0ca581a5ef5223d7d986be0\t2026-07-03T01:37:11+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tFinalize Solovey UI 2026.2.0 release",
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release",
+        "328992697756e0520fa4a048a660e69df4374a89\t2026-06-26T03:17:29+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tRelease Solovey UI 2026.1.0"
+      ]
+    },
+    {
+      "source": "components/telegram/service/notifier.go",
+      "destination": "service/notifier.go",
+      "originalBlob": "aab83bb2270ec2a14e2ad1d2d53c0a9b4e5b7ebc",
+      "originalSHA256": "3d1f6a5a8c78ca4328d0b03752a48796d4d491ab606f5883c54f055218c14e49",
+      "destinationSHA256": "a4018ad36e5835cf0e7f76bb2c3570a2850ee6d12e8b2a14973930d0b1a86fc7",
+      "adaptation": "Original bounded queue/retry/cancellation; diagnostics supplied by owner",
+      "history": [
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13\t2026-08-15T02:57:14+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\trefactor: finalize architecture and release hardening",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0\t2026-08-12T00:37:51+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: ship Solovey UI 2026.3.0",
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release",
+        "328992697756e0520fa4a048a660e69df4374a89\t2026-06-26T03:17:29+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tRelease Solovey UI 2026.1.0"
+      ]
+    },
+    {
+      "source": "components/telegram/internal/schedule/cron.go",
+      "destination": "internal/schedule/cron.go",
+      "originalBlob": "e0ac40d67bce60f3714b0089cac7bf663aee31bf",
+      "originalSHA256": "ebacb2cb18fac1cf4866f3eac3daa45b9950b7fde461e8a4fbbd9c1185309403",
+      "destinationSHA256": "164839c484c1252c5f0582406e16967045754cf851908e874fe9f0f76c383a47",
+      "adaptation": "Stdlib error constructor instead of Panel helper",
+      "history": [
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0\t2026-08-12T00:37:51+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: ship Solovey UI 2026.3.0",
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release"
+      ]
+    },
+    {
+      "source": "components/telegram/internal/settings/settings.go",
+      "destination": "settings/definitions.go",
+      "originalBlob": "e6c62549c2914f8eddb481b4fce47055545bb403",
+      "originalSHA256": "ce144d62cbcda193c9c8f7500f0ed0da83e8adecdfa9b73bbb423f1a658d8064",
+      "destinationSHA256": "861283445d0d47208204f1d67a019c08a22b970c2c9bc2453e8f2422f9b75e5d",
+      "adaptation": "Feature definitions/defaults only; Panel Reader and SecretRef authority retained by Panel",
+      "history": [
+        "2d26a1c1712cdcd118df932de04dcfc7a32035be\t2026-10-18T17:21:17+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tAdapt Telegram credentials to scoped SecretRef access",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0\t2026-08-12T00:37:51+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: ship Solovey UI 2026.3.0",
+        "5be0d168f69f6b32a0ca581a5ef5223d7d986be0\t2026-07-03T01:37:11+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tFinalize Solovey UI 2026.2.0 release",
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release"
+      ]
+    },
+    {
+      "source": "components/telegram/internal/settings/validation.go",
+      "destination": "settings/validation.go",
+      "originalBlob": "780436c7c0227594cba7a1c1fd2376a96101c4f6",
+      "originalSHA256": "66cd1abf715e745cf40c3fb7e323043e1a67c62aeeee719cc4c17968a7e1db7e",
+      "destinationSHA256": "ab54e1b871503fc5b6fb71f4df174ee299ee5f146662eef39f65ee4c7fe80202",
+      "adaptation": "Same feature validation with existing owner proxy-validation callback",
+      "history": [
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0\t2026-08-12T00:37:51+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: ship Solovey UI 2026.3.0"
+      ]
+    },
+    {
+      "source": "components/telegram/internal/settings/validation_test.go",
+      "destination": "settings/validation_test.go",
+      "originalBlob": "a38929976a23f78a0ea990525749b28d61064acf",
+      "originalSHA256": "7b42447f5af8280b963d3e12f6277fb4dd5958cf7660d0fecc184e188e970320",
+      "destinationSHA256": "63295a4b35b0d05d8ba707753c71db6a398b0441f8fabc1e8a8f117ac69079da",
+      "adaptation": "Existing validation regressions",
+      "history": [
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0\t2026-08-12T00:37:51+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: ship Solovey UI 2026.3.0"
+      ]
+    },
+    {
+      "source": "components/telegram/settings_contribution.go",
+      "destination": "settings/fields.go",
+      "originalBlob": "5e6f53f2b5652fd7afe5fcdf7c655741a7bb4846",
+      "originalSHA256": "b8e98b8cb95a0d1b3de2ce8a4d204b7f099b948d68cc0e7e14343782cc84fb75",
+      "destinationSHA256": "c698ff81ed1af98fd33668d45b30f10055255feb32e0701e3097e643cde437f0",
+      "adaptation": "Feature field/alias data; Panel registry remains an adapter",
+      "history": [
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0\t2026-08-12T00:37:51+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: ship Solovey UI 2026.3.0",
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release"
+      ]
+    },
+    {
+      "source": "components/telegram/jobs/cpu_alert.go",
+      "destination": "jobs/cpu_alert.go",
+      "originalBlob": "af97f467c9207ef412593ba43db150470c6ae48d",
+      "originalSHA256": "0692588b0edb9a1caef820de57ece60edc9f541f67e72d5b4c522648dc57df82",
+      "destinationSHA256": "d24e4d5c84fcfdb74992943d4a6f0d0951c56578f69d1423c1a1c124e63be9e5",
+      "adaptation": "Original hysteresis with injected CPU observation, settings and event publication",
+      "history": [
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release",
+        "328992697756e0520fa4a048a660e69df4374a89\t2026-06-26T03:17:29+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tRelease Solovey UI 2026.1.0",
+        "c8366b4591cb80c15f4cfad7829d49a8d4c95793\t2026-06-12T16:51:23+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI initial release",
+        "c326badd96416d5c78417c994bdcdd20127ccbf8\t2026-05-21T11:17:59+07:00\tdeposist <deposist@users.noreply.github.com>\tchore: rename project identity to s-ui-x",
+        "aef936b3859a21529963d22165abf55db6680a55\t2026-05-21T11:16:16+07:00\tdeposist <deposist@users.noreply.github.com>\tfeat: port product snapshot from s-ui-rus-inst"
+      ]
+    },
+    {
+      "source": "components/telegram/jobs/cpu_alert_test.go",
+      "destination": "jobs/cpu_alert_test.go",
+      "originalBlob": "4e003435e8bfa22716b83626b6f26aaab03a8316",
+      "originalSHA256": "d4f9d0d11572a491556beb79a80d2f4fd0eaaf4a97b3684f2400b3494ad2275f",
+      "destinationSHA256": "d4f9d0d11572a491556beb79a80d2f4fd0eaaf4a97b3684f2400b3494ad2275f",
+      "adaptation": "Original feature hysteresis regressions unchanged",
+      "history": [
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release",
+        "328992697756e0520fa4a048a660e69df4374a89\t2026-06-26T03:17:29+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tRelease Solovey UI 2026.1.0",
+        "aef936b3859a21529963d22165abf55db6680a55\t2026-05-21T11:16:16+07:00\tdeposist <deposist@users.noreply.github.com>\tfeat: port product snapshot from s-ui-rus-inst"
+      ]
+    },
+    {
+      "source": "components/telegram/jobs/telegram_report.go",
+      "destination": "jobs/telegram_report.go",
+      "originalBlob": "80c3025adb7cba2025b97f864be3ec3f0ac5d1ab",
+      "originalSHA256": "0b491e96c5545abd2fe4d57ae6a10700a90ab4b8caa17de6d083be3d35d6661f",
+      "destinationSHA256": "8a1d573ed23d248d92f49f8a0d1a212e494b6a3a6e9861f2d82e4d0899968ed4",
+      "adaptation": "Original scheduling/reconciliation with typed settings and owner event/diagnostic callbacks",
+      "history": [
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13\t2026-08-15T02:57:14+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\trefactor: finalize architecture and release hardening",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0\t2026-08-12T00:37:51+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: ship Solovey UI 2026.3.0",
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release",
+        "328992697756e0520fa4a048a660e69df4374a89\t2026-06-26T03:17:29+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tRelease Solovey UI 2026.1.0",
+        "c8366b4591cb80c15f4cfad7829d49a8d4c95793\t2026-06-12T16:51:23+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI initial release",
+        "c326badd96416d5c78417c994bdcdd20127ccbf8\t2026-05-21T11:17:59+07:00\tdeposist <deposist@users.noreply.github.com>\tchore: rename project identity to s-ui-x",
+        "aef936b3859a21529963d22165abf55db6680a55\t2026-05-21T11:16:16+07:00\tdeposist <deposist@users.noreply.github.com>\tfeat: port product snapshot from s-ui-rus-inst"
+      ]
+    },
+    {
+      "source": "components/telegram/jobs/telegram_backup.go",
+      "destination": "jobs/telegram_backup.go",
+      "originalBlob": "87c6b543712ca49dfad918957122fe35b3fea0c9",
+      "originalSHA256": "acb1456f447d1fa37f8f0faf877e674cde5675ab1bbb271fec417c47d81fed30",
+      "destinationSHA256": "4175377cfdebb31bfa0c28cd35af25174c50e953d58ac3b4ddc6fe113c655649",
+      "adaptation": "Original schedule reconciliation; Backup creation/delivery request is an injected owner callback",
+      "history": [
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13\t2026-08-15T02:57:14+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\trefactor: finalize architecture and release hardening",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0\t2026-08-12T00:37:51+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: ship Solovey UI 2026.3.0",
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release"
+      ]
+    },
+    {
+      "source": "components/telegram/frontend/BackupEncryptionOption.vue",
+      "destination": "frontend/BackupEncryptionOption.vue",
+      "originalBlob": "5e4de2fc1c85ebdd81ef42535cd7ff3112722f82",
+      "originalSHA256": "0631bd81d71cd8784c49cddd179cf9defeb38988475205a4d109e3d1be546154",
+      "destinationSHA256": "88bf2da46af041fae996f8ad7e6233d193621211a1a5946e61bd03c254a17afc",
+      "adaptation": "Only public UI SDK import/mock adaptation",
+      "history": [
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release"
+      ]
+    },
+    {
+      "source": "components/telegram/frontend/composables/pages/discoveryLocale.test.ts",
+      "destination": "frontend/composables/pages/discoveryLocale.test.ts",
+      "originalBlob": "ac4b761f47e95d192b543f5d0c77fe4f48c3e477",
+      "originalSHA256": "c6d819de5ab8bf90917ed7accbbda2ae92f93cf95b67926ca8668932e22312bd",
+      "destinationSHA256": "c6d819de5ab8bf90917ed7accbbda2ae92f93cf95b67926ca8668932e22312bd",
+      "adaptation": "Unchanged feature UI/test/locale bytes",
+      "history": [
+        "2294ee6af064e9c4ef155d9fd0f4aeee09f93721\t2026-10-06T05:17:57+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: bound Telegram discovery and serialize settings tests"
+      ]
+    },
+    {
+      "source": "components/telegram/frontend/composables/pages/useTelegramSettingsPage.test.ts",
+      "destination": "frontend/composables/pages/useTelegramSettingsPage.test.ts",
+      "originalBlob": "cfe2790722ee372064c6f95db741b4891512d233",
+      "originalSHA256": "83c4643b807eef1acd73c6b122ce5842ce1dbefdfde1356429e2124b2e5dfb01",
+      "destinationSHA256": "aa819a8a5b93daf5eb514a43b473483208866a42fe16bd9f42c10155506015e1",
+      "adaptation": "Only public UI SDK import/mock adaptation",
+      "history": [
+        "2294ee6af064e9c4ef155d9fd0f4aeee09f93721\t2026-10-06T05:17:57+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: bound Telegram discovery and serialize settings tests"
+      ]
+    },
+    {
+      "source": "components/telegram/frontend/composables/pages/useTelegramSettingsPage.ts",
+      "destination": "frontend/composables/pages/useTelegramSettingsPage.ts",
+      "originalBlob": "51ef39b87277184decb13b0df81a50aa78716e59",
+      "originalSHA256": "ffd3dcb28cbc603212269e166491d49231d38291aef69becc0872e7704ebe7fb",
+      "destinationSHA256": "b760b89dcde1dbe3d7442acefeb7fc00e9a3086a9204f1a6df0918796a3ed443",
+      "adaptation": "Only public UI SDK import/mock adaptation",
+      "history": [
+        "2294ee6af064e9c4ef155d9fd0f4aeee09f93721\t2026-10-06T05:17:57+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: bound Telegram discovery and serialize settings tests",
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13\t2026-08-15T02:57:14+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\trefactor: finalize architecture and release hardening",
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release",
+        "328992697756e0520fa4a048a660e69df4374a89\t2026-06-26T03:17:29+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tRelease Solovey UI 2026.1.0"
+      ]
+    },
+    {
+      "source": "components/telegram/frontend/index.ts",
+      "destination": "frontend/index.ts",
+      "originalBlob": "667c3f9cf0b483305b2decc0050b61943fed7c26",
+      "originalSHA256": "90377821ae57127a2d9c323eb49b1a3e853a9990a90c19cdabd9b2e91674d5fa",
+      "destinationSHA256": "58eb9c278683dfaceed8a91ebdde1f69d7ad87253f41459670c98d9773f46110",
+      "adaptation": "Only public UI SDK import/mock adaptation",
+      "history": [
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release"
+      ]
+    },
+    {
+      "source": "components/telegram/frontend/locales/en.ts",
+      "destination": "frontend/locales/en.ts",
+      "originalBlob": "1233766faf7219dee348bf74ea41eb1d2652450b",
+      "originalSHA256": "880e68f0cd9b21868018150c00d7baa802c45c6d90aafde7336389502b69aade",
+      "destinationSHA256": "880e68f0cd9b21868018150c00d7baa802c45c6d90aafde7336389502b69aade",
+      "adaptation": "Unchanged feature UI/test/locale bytes",
+      "history": [
+        "2294ee6af064e9c4ef155d9fd0f4aeee09f93721\t2026-10-06T05:17:57+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: bound Telegram discovery and serialize settings tests",
+        "c099b01ae5283f2ee5271117e042e51bc166c9ac\t2026-09-14T02:18:00+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tplatform: qualify OpenWrt 25.12.5 support",
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release",
+        "328992697756e0520fa4a048a660e69df4374a89\t2026-06-26T03:17:29+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tRelease Solovey UI 2026.1.0"
+      ]
+    },
+    {
+      "source": "components/telegram/frontend/locales/fa.ts",
+      "destination": "frontend/locales/fa.ts",
+      "originalBlob": "396ab19eef576f76775e9e4777d419664c617c36",
+      "originalSHA256": "2a716da56af34d856610a9166223bdd97462e06ff05abfc7b30acd28e8df48e8",
+      "destinationSHA256": "2a716da56af34d856610a9166223bdd97462e06ff05abfc7b30acd28e8df48e8",
+      "adaptation": "Unchanged feature UI/test/locale bytes",
+      "history": [
+        "2294ee6af064e9c4ef155d9fd0f4aeee09f93721\t2026-10-06T05:17:57+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: bound Telegram discovery and serialize settings tests",
+        "c099b01ae5283f2ee5271117e042e51bc166c9ac\t2026-09-14T02:18:00+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tplatform: qualify OpenWrt 25.12.5 support",
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release",
+        "328992697756e0520fa4a048a660e69df4374a89\t2026-06-26T03:17:29+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tRelease Solovey UI 2026.1.0"
+      ]
+    },
+    {
+      "source": "components/telegram/frontend/locales/ru.ts",
+      "destination": "frontend/locales/ru.ts",
+      "originalBlob": "ebbaf94273918a6d1f3d589cc34758625a911675",
+      "originalSHA256": "cd0824594c013485ead660daeab5a26c201820a53d273a9731d5d112dcd96446",
+      "destinationSHA256": "cd0824594c013485ead660daeab5a26c201820a53d273a9731d5d112dcd96446",
+      "adaptation": "Unchanged feature UI/test/locale bytes",
+      "history": [
+        "2294ee6af064e9c4ef155d9fd0f4aeee09f93721\t2026-10-06T05:17:57+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: bound Telegram discovery and serialize settings tests",
+        "c099b01ae5283f2ee5271117e042e51bc166c9ac\t2026-09-14T02:18:00+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tplatform: qualify OpenWrt 25.12.5 support",
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release",
+        "328992697756e0520fa4a048a660e69df4374a89\t2026-06-26T03:17:29+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tRelease Solovey UI 2026.1.0"
+      ]
+    },
+    {
+      "source": "components/telegram/frontend/locales/vi.ts",
+      "destination": "frontend/locales/vi.ts",
+      "originalBlob": "8fd717dd85661f38fcb163ec38024ee32dcfd1f2",
+      "originalSHA256": "57adbac844cf319942c073a0f6f7cb8b2ca79817d50d4b00d6aa4788cf412c19",
+      "destinationSHA256": "57adbac844cf319942c073a0f6f7cb8b2ca79817d50d4b00d6aa4788cf412c19",
+      "adaptation": "Unchanged feature UI/test/locale bytes",
+      "history": [
+        "2294ee6af064e9c4ef155d9fd0f4aeee09f93721\t2026-10-06T05:17:57+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: bound Telegram discovery and serialize settings tests",
+        "c099b01ae5283f2ee5271117e042e51bc166c9ac\t2026-09-14T02:18:00+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tplatform: qualify OpenWrt 25.12.5 support",
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release",
+        "328992697756e0520fa4a048a660e69df4374a89\t2026-06-26T03:17:29+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tRelease Solovey UI 2026.1.0"
+      ]
+    },
+    {
+      "source": "components/telegram/frontend/locales/zhcn.ts",
+      "destination": "frontend/locales/zhcn.ts",
+      "originalBlob": "24cee9d83f819d4b1efbef7d784c6fd82a9b9771",
+      "originalSHA256": "d00b14a16b123f92605fa1be53e5324d82c78a65c104ee63e46fc3e69234e816",
+      "destinationSHA256": "d00b14a16b123f92605fa1be53e5324d82c78a65c104ee63e46fc3e69234e816",
+      "adaptation": "Unchanged feature UI/test/locale bytes",
+      "history": [
+        "2294ee6af064e9c4ef155d9fd0f4aeee09f93721\t2026-10-06T05:17:57+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: bound Telegram discovery and serialize settings tests",
+        "c099b01ae5283f2ee5271117e042e51bc166c9ac\t2026-09-14T02:18:00+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tplatform: qualify OpenWrt 25.12.5 support",
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release",
+        "328992697756e0520fa4a048a660e69df4374a89\t2026-06-26T03:17:29+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tRelease Solovey UI 2026.1.0"
+      ]
+    },
+    {
+      "source": "components/telegram/frontend/locales/zhtw.ts",
+      "destination": "frontend/locales/zhtw.ts",
+      "originalBlob": "50a6f507baedfbee31888bbdf2f8ed72d0f00bde",
+      "originalSHA256": "f1cc6476f0b2e3194243f00825b14ded1149037112299b32c1f4bf83ed4468e4",
+      "destinationSHA256": "f1cc6476f0b2e3194243f00825b14ded1149037112299b32c1f4bf83ed4468e4",
+      "adaptation": "Unchanged feature UI/test/locale bytes",
+      "history": [
+        "2294ee6af064e9c4ef155d9fd0f4aeee09f93721\t2026-10-06T05:17:57+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: bound Telegram discovery and serialize settings tests",
+        "c099b01ae5283f2ee5271117e042e51bc166c9ac\t2026-09-14T02:18:00+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tplatform: qualify OpenWrt 25.12.5 support",
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release",
+        "328992697756e0520fa4a048a660e69df4374a89\t2026-06-26T03:17:29+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tRelease Solovey UI 2026.1.0"
+      ]
+    },
+    {
+      "source": "components/telegram/frontend/tests/e2e/panel-operability.mjs",
+      "destination": "frontend/tests/e2e/panel-operability.mjs",
+      "originalBlob": "21e57d24826ca3a599d54f11d9b0e5207d55bcef",
+      "originalSHA256": "480f6f7d4292f11064a0bd3bfa49269e6a16a59e26ad38907e561296c87faecd",
+      "destinationSHA256": "480f6f7d4292f11064a0bd3bfa49269e6a16a59e26ad38907e561296c87faecd",
+      "adaptation": "Unchanged feature UI/test/locale bytes",
+      "history": [
+        "c099b01ae5283f2ee5271117e042e51bc166c9ac\t2026-09-14T02:18:00+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tplatform: qualify OpenWrt 25.12.5 support"
+      ]
+    },
+    {
+      "source": "components/telegram/frontend/views/TelegramSettings.scss",
+      "destination": "frontend/views/TelegramSettings.scss",
+      "originalBlob": "6ad1615d37fddb1656d8139591426b003712b2f5",
+      "originalSHA256": "5df5f4dbf6017e51f3300c95fcb0d7a1474b223ee4cb8505a6e07d39470c0433",
+      "destinationSHA256": "5df5f4dbf6017e51f3300c95fcb0d7a1474b223ee4cb8505a6e07d39470c0433",
+      "adaptation": "Unchanged feature UI/test/locale bytes",
+      "history": [
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release",
+        "328992697756e0520fa4a048a660e69df4374a89\t2026-06-26T03:17:29+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tRelease Solovey UI 2026.1.0"
+      ]
+    },
+    {
+      "source": "components/telegram/frontend/views/TelegramSettings.vue",
+      "destination": "frontend/views/TelegramSettings.vue",
+      "originalBlob": "77c65b9424b9bab292c51f4feadc0bfb0154931c",
+      "originalSHA256": "68079cdba801aa5dc4e37536004126eb751c5c45a04296d17161223e869c6049",
+      "destinationSHA256": "c5408973c0b98ec6a37fa5fe8d2777660b9006523e283a5c9cd3dbcc8f2abae5",
+      "adaptation": "Only public UI SDK import/mock adaptation",
+      "history": [
+        "2294ee6af064e9c4ef155d9fd0f4aeee09f93721\t2026-10-06T05:17:57+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: bound Telegram discovery and serialize settings tests",
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release",
+        "328992697756e0520fa4a048a660e69df4374a89\t2026-06-26T03:17:29+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tRelease Solovey UI 2026.1.0",
+        "61d7ca49a4b02e784343e9ce0a689925fefaef7f\t2026-06-04T14:19:20+07:00\tdeposist <deposist@users.noreply.github.com>\tRelease v1.5.7-beta2: Telegram transport selector, client broadcast & greeting",
+        "357791f47f08f40c5bf704e383f1430e7836c274\t2026-05-21T13:32:37+07:00\tdeposist <deposist@users.noreply.github.com>\tfix: validate telegram backup passphrase",
+        "30b49c01a2ca77c7e650f45af7da66dfc86f09e0\t2026-05-21T13:19:50+07:00\tdeposist <deposist@users.noreply.github.com>\tfix: save telegram backup schedule settings",
+        "5170d73a66b895ee2e1c9a4219ca645d260662c9\t2026-05-21T12:53:37+07:00\tdeposist <deposist@users.noreply.github.com>\trelease: prepare v1.5.3",
+        "aef936b3859a21529963d22165abf55db6680a55\t2026-05-21T11:16:16+07:00\tdeposist <deposist@users.noreply.github.com>\tfeat: port product snapshot from s-ui-rus-inst"
+      ]
+    },
+    {
+      "source": "components/telegram/frontend/views/telegramBackupSchedule.test.ts",
+      "destination": "frontend/views/telegramBackupSchedule.test.ts",
+      "originalBlob": "afada6b2b923d8a66bd1957108dc4b0bc7f241cd",
+      "originalSHA256": "c95981a560907496cde4df1bcebbe3df5d53fc3f1e18548a801652008548ef8d",
+      "destinationSHA256": "c95981a560907496cde4df1bcebbe3df5d53fc3f1e18548a801652008548ef8d",
+      "adaptation": "Unchanged feature UI/test/locale bytes",
+      "history": [
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release",
+        "5170d73a66b895ee2e1c9a4219ca645d260662c9\t2026-05-21T12:53:37+07:00\tdeposist <deposist@users.noreply.github.com>\trelease: prepare v1.5.3"
+      ]
+    },
+    {
+      "source": "components/telegram/frontend/views/telegramBackupSchedule.ts",
+      "destination": "frontend/views/telegramBackupSchedule.ts",
+      "originalBlob": "e76ff371aa5b0f551e940677d3048645a6c0500f",
+      "originalSHA256": "1ef4f33fdb12d1eeb8409d7ccb958534cb6fbe2f89be4deda1cc93247bd29feb",
+      "destinationSHA256": "1ef4f33fdb12d1eeb8409d7ccb958534cb6fbe2f89be4deda1cc93247bd29feb",
+      "adaptation": "Unchanged feature UI/test/locale bytes",
+      "history": [
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release",
+        "5170d73a66b895ee2e1c9a4219ca645d260662c9\t2026-05-21T12:53:37+07:00\tdeposist <deposist@users.noreply.github.com>\trelease: prepare v1.5.3"
+      ]
+    },
+    {
+      "source": "components/telegram/frontend/views/telegramSettingsPayload.test.ts",
+      "destination": "frontend/views/telegramSettingsPayload.test.ts",
+      "originalBlob": "139a582bf77dd694d2f02cd171517af2c0949413",
+      "originalSHA256": "592a9f510f92d9c9f5e1c518fc35dde7c0cfbdd059d644d80cfde45580c55188",
+      "destinationSHA256": "8b5bebca8ee00e0acc1aca7fe4dbe6620f9db288cb255afd15baa09370cc410f",
+      "adaptation": "Only public UI SDK import/mock adaptation",
+      "history": [
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release",
+        "328992697756e0520fa4a048a660e69df4374a89\t2026-06-26T03:17:29+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tRelease Solovey UI 2026.1.0",
+        "357791f47f08f40c5bf704e383f1430e7836c274\t2026-05-21T13:32:37+07:00\tdeposist <deposist@users.noreply.github.com>\tfix: validate telegram backup passphrase",
+        "30b49c01a2ca77c7e650f45af7da66dfc86f09e0\t2026-05-21T13:19:50+07:00\tdeposist <deposist@users.noreply.github.com>\tfix: save telegram backup schedule settings"
+      ]
+    },
+    {
+      "source": "components/telegram/frontend/views/telegramSettingsPayload.ts",
+      "destination": "frontend/views/telegramSettingsPayload.ts",
+      "originalBlob": "2a1d5cf28b7da0e7cf300e4279b56b41bbebc71c",
+      "originalSHA256": "18fb5aaa664cc6cb6f53125978d2c68dfd9669a032c1fde6f5716a53d33e3115",
+      "destinationSHA256": "34f22c316cbbae3b5d2547297457ad7d8f281b2a02a9f98233f6c875750d48a0",
+      "adaptation": "Only public UI SDK import/mock adaptation",
+      "history": [
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13\t2026-08-15T02:57:14+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\trefactor: finalize architecture and release hardening",
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release"
+      ]
+    },
+    {
+      "source": "components/telegram/service/backup.go",
+      "destination": "service/backup.go",
+      "originalBlob": "c8d2324bab09ec9d465bd5054df8a4a164b38886",
+      "originalSHA256": "2869e0c2afcf1ff16effa2901184315c7aceeab7e028fbc5deef56a52a7aaae5",
+      "destinationSHA256": "e62fc47cbd255f36860a3838dc9804133d69e3de7845e13fcfbceb8449671624",
+      "adaptation": "Original backup delivery policy, metadata, concurrency, audit and lease; snapshot/encryption/filesystem remain the injected Backup owner",
+      "history": [
+        "2d26a1c1712cdcd118df932de04dcfc7a32035be\t2026-10-18T17:21:17+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tAdapt Telegram credentials to scoped SecretRef access",
+        "7ade7787b53b29129ab8c85a82c040b71cb9be30\t2026-10-04T23:36:43+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfix(restore): drain SQLite generations through acceptance and recovery",
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13\t2026-08-15T02:57:14+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\trefactor: finalize architecture and release hardening",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0\t2026-08-12T00:37:51+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: ship Solovey UI 2026.3.0",
+        "5be0d168f69f6b32a0ca581a5ef5223d7d986be0\t2026-07-03T01:37:11+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tFinalize Solovey UI 2026.2.0 release",
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release",
+        "328992697756e0520fa4a048a660e69df4374a89\t2026-06-26T03:17:29+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tRelease Solovey UI 2026.1.0",
+        "c8366b4591cb80c15f4cfad7829d49a8d4c95793\t2026-06-12T16:51:23+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI initial release",
+        "20c730f1d3f7f49d3c88f2869faeb3da61adaaf9\t2026-06-02T12:32:47+07:00\tdeposist <deposist@users.noreply.github.com>\tRelease v1.5.6-beta4: security & static-analysis hardening",
+        "6610062fa9eb5af9eac38140c191fcd7b42fea89\t2026-05-25T12:36:36+07:00\tdeposist <deposist@users.noreply.github.com>\tfix(service/telegram-backup): harden secret zeroization paths (registry #25)",
+        "c326badd96416d5c78417c994bdcdd20127ccbf8\t2026-05-21T11:17:59+07:00\tdeposist <deposist@users.noreply.github.com>\tchore: rename project identity to s-ui-x",
+        "aef936b3859a21529963d22165abf55db6680a55\t2026-05-21T11:16:16+07:00\tdeposist <deposist@users.noreply.github.com>\tfeat: port product snapshot from s-ui-rus-inst"
+      ]
+    },
+    {
+      "source": "components/telegram/component.go",
+      "destination": "scheduled_jobs.go",
+      "originalBlob": "4c719c3c434d093e1575512b4b4d09dbdd7bbb24",
+      "originalSHA256": "8ef0b0e84b90ba7d534213c391b2703818edbe7cbe4181e74bfe4dc670d93cd3",
+      "destinationSHA256": "90558d19f4f221e89ea815b07c5f4dfaf87986e2b81ec0a85bc4b49bfdfa1c6b",
+      "adaptation": "Original feature job composition and stop/drain moved without Panel registrations or a second supervisor",
+      "history": [
+        "212a69dfdaf60faa3f8626eac878638daf40bb6a\t2026-11-09T18:25:28+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tAdopt shared component contracts and preserve Panel owner adapters",
+        "4c424b0e6307117008236aba3a35ba4824800008\t2026-10-21T03:07:25+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat(componenthost): bind declared owner ports for Telegram",
+        "2b30456e427ec5b3034ddec79a8b82046b0f04a9\t2026-10-17T17:41:05+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\trefactor(componenthost): inject Telegram transport and audit ports",
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13\t2026-08-15T02:57:14+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\trefactor: finalize architecture and release hardening",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0\t2026-08-12T00:37:51+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: ship Solovey UI 2026.3.0",
+        "5be0d168f69f6b32a0ca581a5ef5223d7d986be0\t2026-07-03T01:37:11+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tFinalize Solovey UI 2026.2.0 release",
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release"
+      ]
+    },
+    {
+      "source": "components/telegram/service/telegram_test.go",
+      "destination": "service/notifier_test.go",
+      "originalBlob": "d5897a51517654d3df95faf51689840f7add6391",
+      "originalSHA256": "e94899add6ae3032fdb1e939ab516bde5c43dc53180aae577f7f4ab9d5a47f72",
+      "destinationSHA256": "512845bd77c9c9ee93e8c36ea276140903c9dbc44ace0816360de17c7e233631",
+      "adaptation": "Original pure queue/retry/overflow/cancellation regressions moved to source owner",
+      "history": [
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13\t2026-08-15T02:57:14+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\trefactor: finalize architecture and release hardening",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0\t2026-08-12T00:37:51+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: ship Solovey UI 2026.3.0",
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release",
+        "328992697756e0520fa4a048a660e69df4374a89\t2026-06-26T03:17:29+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tRelease Solovey UI 2026.1.0",
+        "c8366b4591cb80c15f4cfad7829d49a8d4c95793\t2026-06-12T16:51:23+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI initial release",
+        "20c730f1d3f7f49d3c88f2869faeb3da61adaaf9\t2026-06-02T12:32:47+07:00\tdeposist <deposist@users.noreply.github.com>\tRelease v1.5.6-beta4: security & static-analysis hardening",
+        "c782e4b324b85e0848d5c2607473dbeba4c5e4f2\t2026-05-25T12:32:55+07:00\tdeposist <deposist@users.noreply.github.com>\tfix(service/telegram): cancel notifier backoff on stop (registry #22)",
+        "c326badd96416d5c78417c994bdcdd20127ccbf8\t2026-05-21T11:17:59+07:00\tdeposist <deposist@users.noreply.github.com>\tchore: rename project identity to s-ui-x",
+        "aef936b3859a21529963d22165abf55db6680a55\t2026-05-21T11:16:16+07:00\tdeposist <deposist@users.noreply.github.com>\tfeat: port product snapshot from s-ui-rus-inst"
+      ]
+    },
+    {
+      "source": "components/telegram/service/discovery_test.go",
+      "destination": "service/discovery_test.go",
+      "originalBlob": "deb11c5198c3a5ce2c789e9c26576218e19ae2fa",
+      "originalSHA256": "7078213b6af364b7133cae8f1bc25977c7361828febd51ec2cdfb5e7cfea9a51",
+      "destinationSHA256": "3d938efe235ac99b1295aa7cc5f52365dee60ce5b0f226b9116af6878f8e751b",
+      "adaptation": "Original nondestructive bounded discovery fixtures use a fake owner lease instead of a Panel database fixture",
+      "history": [
+        "2d26a1c1712cdcd118df932de04dcfc7a32035be\t2026-10-18T17:21:17+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tAdapt Telegram credentials to scoped SecretRef access",
+        "eb103a1de87367bc0ccc4637d9c9cc6ae4fab879\t2026-10-06T05:27:21+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\ttest: retain missing-context rejection as an input fixture",
+        "2294ee6af064e9c4ef155d9fd0f4aeee09f93721\t2026-10-06T05:17:57+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: bound Telegram discovery and serialize settings tests"
+      ]
+    },
+    {
+      "source": "components/telegram/service/telegram_http_test_helpers_test.go",
+      "destination": "service/http_fixture_test.go",
+      "originalBlob": "3e793d0b93cfa0306a845795d5d0a791917934e0",
+      "originalSHA256": "cb9d7a3a8df654b2ee59ab74455f87f1cba0076c5f5af5e37df5b8134605a146",
+      "destinationSHA256": "07188c933d474076779798791f8710d4c700ffb2de69c5dd203ef570ba45bdfd",
+      "adaptation": "Only deterministic HTTP fixture and explicit fake owner inputs; no DB or Panel imports",
+      "history": [
+        "27f6b0b78b4c38b06bdf8a4a5140051256b14863\t2026-07-02T16:59:26+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tPrepare Solovey UI 2026.2.0 release"
+      ]
+    }
+  ]
+}

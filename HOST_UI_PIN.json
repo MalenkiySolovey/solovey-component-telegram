@@ -1,0 +1,10 @@
+{
+  "repository": "MalenkiySolovey/solovey-ui",
+  "sourceCommit": "5fe2d9b6d2e9f4ce4c01a4bcdbd9eed12ddb959c",
+  "apiVersion": "1.0",
+  "files": {
+    "src/componentSystem/sdk.ts": "942a17c0ccbcd2f7073e13eefcf8053ccccb36487a96113bf1faa04d8989728b",
+    "package-lock.json": "ce5862abc08b48a100f25be49c345ac1a973d9f96b11a52af077195d3e64ffb0",
+    ".node-version": "f399c8bddb720028cf5d92150a8472ee9b47ba620915755b141a6d737ef55f6a"
+  }
+}
