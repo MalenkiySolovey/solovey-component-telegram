@@ -1,6 +1,6 @@
 {
   "repository": "MalenkiySolovey/solovey-ui",
-  "sourceCommit": "83571464b19f54d48bfc8df0e3d8ebc2c0448ed5",
+  "sourceCommit": "5fe2d9b6d2e9f4ce4c01a4bcdbd9eed12ddb959c",
   "apiVersion": "1.0",
   "files": {
     "src/componentSystem/sdk.ts": "942a17c0ccbcd2f7073e13eefcf8053ccccb36487a96113bf1faa04d8989728b",
