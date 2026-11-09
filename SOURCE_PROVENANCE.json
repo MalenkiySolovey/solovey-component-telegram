@@ -156,7 +156,7 @@
       "destination": "settings/validation.go",
       "originalBlob": "780436c7c0227594cba7a1c1fd2376a96101c4f6",
       "originalSHA256": "66cd1abf715e745cf40c3fb7e323043e1a67c62aeeee719cc4c17968a7e1db7e",
-      "destinationSHA256": "2f78a26ec079834211c77abbb9b391ceff492f5d793b2892fdef7c71a40c243e",
+      "destinationSHA256": "ab54e1b871503fc5b6fb71f4df174ee299ee5f146662eef39f65ee4c7fe80202",
       "adaptation": "Same feature validation with existing owner proxy-validation callback",
       "history": [
         "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0\t2026-08-12T00:37:51+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: ship Solovey UI 2026.3.0"
@@ -167,7 +167,7 @@
       "destination": "settings/validation_test.go",
       "originalBlob": "a38929976a23f78a0ea990525749b28d61064acf",
       "originalSHA256": "7b42447f5af8280b963d3e12f6277fb4dd5958cf7660d0fecc184e188e970320",
-      "destinationSHA256": "7b42447f5af8280b963d3e12f6277fb4dd5958cf7660d0fecc184e188e970320",
+      "destinationSHA256": "63295a4b35b0d05d8ba707753c71db6a398b0441f8fabc1e8a8f117ac69079da",
       "adaptation": "Existing validation regressions",
       "history": [
         "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0\t2026-08-12T00:37:51+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfeat: ship Solovey UI 2026.3.0"

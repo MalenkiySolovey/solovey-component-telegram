@@ -15,7 +15,7 @@ import (
 func Validate(key string, value string, storedSecretMarker string, validateProxy ...func(string, string) error) error {
 	if _, ok := BooleanKeys()[key]; ok {
 		if _, err := strconv.ParseBool(value); err != nil {
-			return errors.New("invalid boolean setting: " + key)
+			return errors.New("invalid boolean setting:  " + key)
 		}
 		return nil
 	}

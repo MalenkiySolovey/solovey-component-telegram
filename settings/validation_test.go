@@ -20,3 +20,9 @@ func TestValidateUsesSharedCronContract(t *testing.T) {
 		t.Fatal("invalid cron schedule accepted")
 	}
 }
+
+func TestValidationPreservesExistingOwnerErrorText(t *testing.T) {
+	if err := Validate(EnabledKey, "invalid", "stored"); err == nil || err.Error() != "invalid boolean setting:  telegramEnabled" {
+		t.Fatalf("boolean validation response changed: %v", err)
+	}
+}
