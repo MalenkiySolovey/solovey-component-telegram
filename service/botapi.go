@@ -73,10 +73,7 @@ func (s *Service) SendDocumentStream(ctx context.Context, filename string, sourc
 	if err := <-writeErr; err != nil {
 		return Result{ErrorClass: "payload"}
 	}
-	if response.StatusCode < 200 || response.StatusCode >= 300 {
-		return Result{ErrorClass: integrationtelegram.StatusErrorClass(response.StatusCode)}
-	}
-	return Result{Success: true}
+	return botAPIResult("sendDocument", response)
 }
 
 func WriteDocumentMultipartStream(writer *multipart.Writer, chatID string, filename string, source io.Reader, caption string) error {
@@ -131,11 +128,22 @@ func (s *Service) SendContext(ctx context.Context, text string) Result {
 	if err != nil {
 		return Result{ErrorClass: TransportErrorClass(err)}
 	}
+	return botAPIResult("sendMessage", response)
+}
+
+func botAPIResult(method string, response integrationtelegram.APIResponse) Result {
 	if response.StatusCode < 200 || response.StatusCode >= 300 {
 		return Result{
 			ErrorClass: integrationtelegram.StatusErrorClass(response.StatusCode),
 			RetryAfter: integrationtelegram.RetryAfter(response.StatusCode, response.Body),
 		}
+	}
+	if _, err := integrationtelegram.ParseResponse(method, response.Body); err != nil {
+		var providerError *integrationtelegram.APIError
+		if errors.As(err, &providerError) {
+			return Result{ErrorClass: integrationtelegram.StatusErrorClass(providerError.Code), RetryAfter: integrationtelegram.RetryAfter(providerError.Code, response.Body)}
+		}
+		return Result{ErrorClass: "unknown"}
 	}
 	return Result{Success: true}
 }

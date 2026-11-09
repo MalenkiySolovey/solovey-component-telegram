@@ -125,3 +125,27 @@ func TestFailedDocumentStreamCannotReportSuccessfulDelivery(t *testing.T) {
 		t.Fatalf("failed upload reported success: %+v", result)
 	}
 }
+
+func TestBotAPIApplicationFailuresCannotReportDeliverySuccess(t *testing.T) {
+	for _, body := range []string{"", "invalid-json", `{"ok":false,"error_code":401,"description":"private-provider-detail"}`} {
+		for _, operation := range []string{"message", "document"} {
+			t.Run(operation+"-"+body, func(t *testing.T) {
+				svc := &telegram.Service{Settings: deliverySettings{true, "123456:synthetic-token", "42"}, Operations: fixtureOperation, Client: &http.Client{Transport: discoveryRoundTrip(func(r *http.Request) (*http.Response, error) {
+					if r.Body != nil {
+						_, _ = io.Copy(io.Discard, r.Body)
+					}
+					return discoveryResponse(200, body), nil
+				})}}
+				var result telegram.Result
+				if operation == "document" {
+					result = svc.SendDocument("fixture.aes", []byte("encrypted"), "caption")
+				} else {
+					result = svc.Send("message")
+				}
+				if result.Success || result.ErrorClass == "" {
+					t.Fatalf("failed Bot API response reported success: %+v", result)
+				}
+			})
+		}
+	}
+}

@@ -72,8 +72,8 @@
       "destination": "service/botapi.go",
       "originalBlob": "9dc4431e5088567332ffed2429234897037ccc66",
       "originalSHA256": "eb9f5be2c26272a3c9cf64b6ff3e1b83f798881ac3b2690b0b3a6eec0195150d",
-      "destinationSHA256": "708a37deb22aded68430b45c5c839d415f90b72f482f6152a4b6364fe328654c",
-      "adaptation": "Original delivery/discovery with injected existing operation admission and shared transport",
+      "destinationSHA256": "f6d44d5c0dd4da6b7f41114871ea3d0d6a63b91c1dad474eed4074a71221ff36",
+      "adaptation": "Original delivery/discovery with injected existing operation admission and shared transport; reject malformed and application-error HTTP-success responses through the existing shared parser",
       "history": [
         "2d26a1c1712cdcd118df932de04dcfc7a32035be\t2026-10-18T17:21:17+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tAdapt Telegram credentials to scoped SecretRef access",
         "7ade7787b53b29129ab8c85a82c040b71cb9be30\t2026-10-04T23:36:43+03:00\tMalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>\tfix(restore): drain SQLite generations through acceptance and recovery",
