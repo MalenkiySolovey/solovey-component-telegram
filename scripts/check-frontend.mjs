@@ -23,7 +23,7 @@ assert.equal(fs.realpathSync.native(modules),sdkModules,'UI tests must use the a
 const generated=path.join(root,'.frontend-check')
 fs.mkdirSync(generated,{recursive:true})
 const tsconfig={compilerOptions:{target:'ESNext',module:'ESNext',moduleResolution:'bundler',strict:true,jsx:'preserve',resolveJsonModule:true,isolatedModules:true,esModuleInterop:true,ignoreDeprecations:'6.0',lib:['ESNext','DOM'],skipLibCheck:true,noEmit:true,baseUrl:frontend,
- paths:{'@solovey/component-ui':[path.join(sdk,'src/componentSystem/sdk.ts')],'@/*':[path.join(sdk,'src/*')],...Object.fromEntries(['vue','vue-i18n','vue-router','notivue','vitest'].map(name=>[name,[path.join(sdkModules,name)]]))},typeRoots:[path.join(sdkModules,'@types')]},include:[path.join(frontend,'**/*.ts'),path.join(frontend,'**/*.vue'),path.join(sdk,'src/vite-env.d.ts')],exclude:[modules]}
+ paths:{'@solovey/component-ui':[path.join(sdk,'src/componentSystem/sdk.ts')],'@/*':[path.join(sdk,'src/*')],...Object.fromEntries(['vue','vue-i18n','vue-router','notivue','vitest'].map(name=>[name,[path.join(sdkModules,name)]]))},types:['node'],typeRoots:[path.join(sdkModules,'@types')]},include:[path.join(frontend,'**/*.ts'),path.join(frontend,'**/*.vue'),path.join(sdk,'src/vite-env.d.ts')],exclude:[modules]}
 fs.writeFileSync(path.join(generated,'tsconfig.json'),JSON.stringify(tsconfig,null,2)+'\n')
 const env={...process.env,SOLOVEY_COMPONENT_UI_SDK:sdk}
 for(const args of [[path.join(sdkModules,'vue-tsc/bin/vue-tsc.js'),'--noEmit','-p',path.join(generated,'tsconfig.json')],[path.join(sdkModules,'vitest/vitest.mjs'),'run','--config',path.join(frontend,'vitest.config.mts')]]) {
